@@ -1,0 +1,12 @@
+* Syntax
+** expr       ::= <value> {<oper> <expr>}
+** line       ::= <definition> | <assignment> | <expr>
+** value      ::= <number> | <function>
+** function   ::= <variable>(<expr>)
+** number     ::= [-+]?[0-9]+\.[0-9]* | [-+]?\.[0-9]+
+** variable   ::= [a-zA-Z]+
+** assignment ::= <variable> = <expr>
+** oper       ::= [-+/*%=]
+** piecewise  ::= \{ <expr> if <expr>
+** body       ::= <piecewise> | <expr>
+** definition ::= <variable>(<variable>{, <variable>}*) = <body>
